@@ -20,7 +20,6 @@ import (
 	"go/build"
 	"html/template"
 	"io"
-	"log"
 	"os"
 	"path/filepath"
 	"strings"
@@ -39,7 +38,6 @@ func init() {
 }
 
 func main() {
-	log.SetFlags(0)
 	flag.Usage = usage
 	flag.Parse()
 
