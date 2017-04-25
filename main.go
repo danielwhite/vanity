@@ -9,7 +9,8 @@ The following generates a listing for an entire vanity domain,
 "vanity.example.com" where the source code is hosted under a specific
 GitHub user:
 
-	go list vanity.example.com/... | vanity -replace vanity.example.com=github.com/actual-user -o .
+	go list vanity.example.com/... | \
+	  vanity -replace vanity.example.com=github.com/actual-user -o .
 */
 package main // import "whitehouse.id.au/vanity"
 
